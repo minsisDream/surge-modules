@@ -1,0 +1,8 @@
+#!name = 通用去广告规则集 v2
+#!desc = blackmatrix7 广告域名规则，域名层 REJECT，无需 MITM；规则源走 GitHub raw（jsdelivr 在本网络不通）
+#!category = 广告拦截
+#!author = blackmatrix7 (规则整理)
+
+[Rule]
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Advertising/Advertising.list,REJECT,no-resolve
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AdvertisingLite/AdvertisingLite.list,REJECT,no-resolve
