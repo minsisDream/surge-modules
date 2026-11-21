@@ -1,8 +1,8 @@
 #!name = 通用去广告规则集
-#!desc = 基于 blackmatrix7/ios_rule_script 的广告拦截规则,DNS/连接层拦截,无需MITM
+#!desc = 基于 blackmatrix7/ios_rule_script 的广告拦截规则；域名层 REJECT，无需 MITM。规则源用 GitHub raw（实测本机 jsdelivr 不通）
 #!category = 广告拦截
 #!author = blackmatrix7 (规则整理)
 
 [Rule]
-RULE-SET,https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/Advertising/Advertising.list,REJECT,no-resolve
-RULE-SET,https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/AdvertisingLite/AdvertisingLite.list,REJECT,no-resolve
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Advertising/Advertising.list,REJECT,no-resolve
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AdvertisingLite/AdvertisingLite.list,REJECT,no-resolve
